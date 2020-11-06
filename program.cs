@@ -1,1 +1,12 @@
-# nothing
+using System;
+
+namespace program
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            System.Console.WriteLine("Hello");
+        }
+    }
+}
