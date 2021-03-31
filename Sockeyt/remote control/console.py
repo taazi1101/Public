@@ -1,8 +1,8 @@
 import socket
 
 s = socket.socket()
-port = 60001
 host = input("IP:")
+port = int(input("Port:"))
 
 s.connect((host, port))
 while True:

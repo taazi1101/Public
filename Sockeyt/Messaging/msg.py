@@ -3,7 +3,7 @@ import threading
 import socket
 import sys
 
-port = 12346
+port = 60001
 print("Suggested ip: " + socket.gethostbyname(socket.gethostname()))
 mode = input("1:Connect 2:Listen :")
 ip = input("IP:")
