@@ -3,6 +3,7 @@ import socket
 import ntpath
 import os
 
+print("Server")
 HOST = input("IP: ")
 PORT = 65432
 s = socket.socket()

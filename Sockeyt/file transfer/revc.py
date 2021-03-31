@@ -1,6 +1,7 @@
 import socket
 import os
 
+print("Connect")
 HOST = input("IP: ")
 port = 65432
 s = socket.socket()

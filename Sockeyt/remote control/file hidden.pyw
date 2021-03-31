@@ -1,10 +1,11 @@
 import subprocess
 import socket
+import sys
 
 print(socket.gethostbyname(socket.gethostname()))
 s = socket.socket()
-host = input("IP:")
-port = int(input("Port:"))
+port = int(sys.argv[2])
+host = sys.argv[1]
 
 s.bind((host, port))
 s.listen()
