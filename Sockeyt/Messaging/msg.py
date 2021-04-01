@@ -1,12 +1,10 @@
-from time import sleep
 import threading
 import socket
-import sys
 
-port = 60001
 print("Suggested ip: " + socket.gethostbyname(socket.gethostname()))
 mode = input("1:Connect 2:Listen :")
 ip = input("IP:")
+port = int(input("Port:"))
 s = socket.socket()
 
 
