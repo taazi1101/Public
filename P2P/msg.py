@@ -13,7 +13,7 @@ def recive(sock):
         print("[+] " + data.decode())
 
 if mode == "2":
-    port = 60002
+    port = 60001
     s.bind((ip,port))
     s.listen()
     conn, addr = s.accept()
@@ -23,7 +23,7 @@ if mode == "2":
         conn.send(msg.encode())
 
 elif mode == "1":
-    port = 60001
+    port = 60002
     s.connect((ip,port))
     threading.Thread(target=lambda:recive(s)).start()
     while True:
