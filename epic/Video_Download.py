@@ -29,10 +29,11 @@ if use_play:
         input()
         exit()
     print("Downloading videos from playlist...")
+    
     for video_playurl in playlist.video_urls:
         try:
             print(f"Downloading {pytube.YouTube(video_playurl).title}")
-            pytube.YouTube(video_playurl).streams.first().download("Youtube")
+            pytube.YouTube(video_playurl).streams.first().download(f"Youtube/{playlist.title}")
             print(f"Downloaded {pytube.YouTube(video_playurl).title}")
         except:
             print("Failed to download video. Maybe its private?")
